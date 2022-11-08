@@ -28,7 +28,7 @@ function onFormSubmit(event) {
 }
 
 function populateMessage(event) {
-  let savedMessage = JSON.parse(localStorage.getItem(STORAGE_KEY) || '');
+  let savedMessage = JSON.parse(localStorage.getItem(STORAGE_KEY));
   if (savedMessage) {
     email.value = savedMessage.email;
     message.value = savedMessage.message;
